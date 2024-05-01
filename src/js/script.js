@@ -103,7 +103,7 @@ document.getElementById("nilaiPerolehanTanahForm").addEventListener("submit", fu
   // Menampilkan hasil sesuai pilihan hitung
   var hasilElem = document.getElementById("hasil");
   hasilElem.innerHTML = `
-        <br><h2>Rencana Anggaran Biaya Pembuatan Surat Tanah</h2><br> 
+        <br><br><br><h2>Rencana Anggaran Biaya Pembuatan Surat Tanah</h2><br> 
         <p>Nama Penjual: ${namapenjual}</p>
         <p>Nama Pembeli: ${namapembeli}</p>
         <p>Alamat: ${alamat}</p>
