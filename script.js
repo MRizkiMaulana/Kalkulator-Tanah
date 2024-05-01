@@ -91,7 +91,7 @@ document.getElementById("nilaiPerolehanTanahForm").addEventListener("submit", fu
 
     if (hitungType === "hitung-ajb") {
         hasilElem.innerHTML += `
-            <br><h3>Uraian :</h3>
+            <h3>Uraian :</h3>
             <p>BPHTB: ${bphtb.toLocaleString("id-ID", {
               style: "currency",
               currency: "IDR",
@@ -128,7 +128,7 @@ document.getElementById("nilaiPerolehanTanahForm").addEventListener("submit", fu
               style: "currency",
               currency: "IDR",
             })}</p>
-            <br><h3>Total Harga :</h3>
+            <h3>Total Harga :</h3>
             <p>Nilai Perkiraan Harga AJB/APHB/Akta Hibah: ${nilaiPerkiraanHarga.toLocaleString(
               "id-ID",
               { style: "currency", currency: "IDR" }
@@ -136,7 +136,7 @@ document.getElementById("nilaiPerolehanTanahForm").addEventListener("submit", fu
             `;
     } else if (hitungType === "hitung-segel") {
         hasilElem.innerHTML += `
-            <br><h3>Uraian :</h3>
+            <h3>Uraian :</h3>
             <p>Kas Desa: ${kasDesa.toLocaleString("id-ID", {
               style: "currency",
               currency: "IDR",
@@ -161,7 +161,7 @@ document.getElementById("nilaiPerolehanTanahForm").addEventListener("submit", fu
               style: "currency",
               currency: "IDR",
             })}</p>
-            <br><h3>Total Harga :</h3>
+            <h3>Total Harga :</h3>
             <p>Nilai Perkiraan Harga Segel Jual Beli: ${segelJualBeli.toLocaleString(
               "id-ID",
               { style: "currency", currency: "IDR" }
