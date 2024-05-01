@@ -25,20 +25,11 @@
             <label for="nonopsppt">Nomor NOP SPPT:</label>
             <input type="text" id="nonopsppt" required>
 
-            <label for="njop">NJOP (Nominal):</label>
-            <input type="number" id="njop" required>
-
-            <label for="njopBangunan">NJOP Bangunan (Nominal):</label>
-            <input type="number" id="njopBangunan" required>
-            
-            <label for="persenNjop">Persentase NJOP (%):</label>
-            <input type="number" step="0.01" id="persenNjop" required>
+            <label for="hargaJual">Harga Jual:</label>
+            <input type="number" id="hargaJual" required>
             
             <label for="luasTanah">Luas Tanah (m<sup>2</sup>):</label>
-            <input type="number" id="luasTanah" required>
-            
-            <label for="luasBangunan">Luas Bangunan (m<sup>2</sup>):</label>
-            <input type="number" id="luasBangunan" required>
+            <input type="number" id="luasTanah" required>            
 
             <label for="hitungType">Pilih Hitung:</label><br><br>
             <input type="radio" id="hitungAjb" name="hitungType" value="hitung-ajb" checked>
@@ -47,10 +38,10 @@
             <label for="hitungSegel">Hitung Segel</label><br>
             
             <button type="submit">Hitung</button><br>
-            <p>Hitung Harga Jual Manual, klik <a href="hargajual.html">di sini</a>.</p>
+            <p>Hitung Auto, klik <a href="index.html">di sini</a>.</p>
         </form>
         <div id="hasil"></div>
     </div>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/hargajual.js"></script>
 </body>
 </html>
