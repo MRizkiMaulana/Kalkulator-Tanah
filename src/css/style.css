@@ -54,3 +54,22 @@ button:hover {
 #hasil br {
     display: none;
 }
+@media print {
+    /* Atur ukuran font agar sesuai dengan ukuran layar */
+    body {
+        font-size: 2.2vw; /* Sesuaikan angka sesuai kebutuhan */
+    }
+
+    /* Atur ukuran elemen lainnya */
+    .container {
+        width: 95vw; /* Misalnya, 95% dari lebar layar */
+        margin: auto;
+    }
+
+    /* Atur margin atau padding lainnya sesuai kebutuhan */
+    /* Misalnya:
+    .header {
+        margin-top: 5vh; 
+    }
+    */
+}
