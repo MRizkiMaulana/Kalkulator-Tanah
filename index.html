@@ -12,11 +12,11 @@
     white-space: nowrap; /* Membuat teks agar tidak mematahkan baris */
     margin: 30% auto; /* Posisi teks di tengah dan lebih besar */
     letter-spacing: .15em; /* Spasi antar huruf */
-    animation: typing 7s steps(40, end) forwards, blink .5s infinite alternate; /* Animasi mengetik dan berkedip */
     font-size: 48px; /* Menentukan ukuran teks yang lebih besar */
     text-align: center; /* Menengahkan teks */
     background-color: rgb(255, 255, 255); /* Latar belakang menjadi hitam */
     color: rgb(0, 0, 0); /* Warna teks menjadi putih */
+    animation: typing 2s steps(40, end) forwards, blink .5s infinite alternate; /* Animasi mengetik dan berkedip */
 }
 
 /* Keyframes untuk animasi mengetik */
@@ -46,6 +46,21 @@ body {
 </head>
 <body>
 <div class="typing">Kalkulator Tanah<a href="njop.html"></a>...</div>
-<meta http-equiv="refresh" content="5; URL=njop.html">
+<meta http-equiv="refresh" content="6; URL=njop.html">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var typingElement = document.querySelector('.typing');
+
+    function restartAnimation() {
+        typingElement.style.animation = 'none';
+        void typingElement.offsetWidth;
+        typingElement.style.animation = null;
+    }
+
+    typingElement.addEventListener('animationend', restartAnimation);
+});
+</script>
+
 </body>
 </html>
