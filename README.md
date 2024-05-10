@@ -13,6 +13,14 @@ Ini berbeda dengan Repo Kalkulator-Tanah-Umum karena ini memiliki fitur Custom N
 ![image](https://github.com/MRizkiMaulana/Kalkulator-Tanah/assets/100768439/9544aec2-af45-4629-8584-93077661f318)
 
 
+## Teknologi yang Digunakan
+
+- **HTML**: Digunakan untuk membangun struktur dan konten halaman web.
+- **CSS**: Digunakan untuk mengatur tata letak dan gaya visual halaman web.
+- **JavaScript**: Digunakan untuk mengatur logika perhitungan dan interaksi pengguna pada halaman web.
+- **Radio Button dan Form Handling**: Menggunakan elemen radio button dan form handling dalam HTML untuk memungkinkan pengguna memilih metode perhitungan dan mengirimkan data ke JavaScript untuk diproses.
+- **Event Listeners**: Menggunakan event listeners dalam JavaScript untuk menangani aksi pengguna seperti pengiriman formulir dan mencetak hasil.
+- **Print Functionality**: Menambahkan fungsi untuk mencetak hasil perhitungan menggunakan JavaScript dan `window.print()`.
 
 
 ## Fitur
