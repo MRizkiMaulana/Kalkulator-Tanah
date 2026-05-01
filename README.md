@@ -52,6 +52,6 @@ Ini berbeda dengan Repo Kalkulator-Tanah-Umum karena ini memiliki fitur Custom N
 
 ## Demo
 
-Anda dapat melihat demo langsung dari aplikasi ini di [tautan](https://mrizkimaulana.github.io/Kalkulator-Tanah/).
+Anda dapat melihat demo langsung dari aplikasi ini di [tautan](https://tanah-x.bantarjati.id).
 
 
