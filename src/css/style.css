@@ -1,95 +1,122 @@
-<style>
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root{
+  --bg1:#eef2f7;
+  --bg2:#dbe7f5;
+  --card:#ffffff;
+  --text:#2c3e50;
+  --muted:#6b7a90;
+  --primary:#4a90e2;
+  --primary-2:#357ABD;
+  --soft:#f4f8ff;
+}
+
+/* ===== BASE ===== */
 body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
   font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#4a90e2,#6fb1fc);
-  color:white;
-  overflow:hidden;
+  background: linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:var(--text);
 }
 
-/* WRAPPER */
-.wrapper{
+/* ===== CONTAINER ===== */
+.container{
+  max-width: 920px;
+  margin: 50px auto;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  animation: fadeIn .6s ease;
+}
+
+/* ===== HEADER ===== */
+.header{
   text-align:center;
-  padding:20px;
-  max-width:90%;
-  transition:0.5s;
+  margin-bottom: 20px;
 }
-
-/* TYPING */
-.typing{
-  font-size:36px;
+.header h1{
   font-weight:600;
-  border-right:3px solid white;
-  white-space:nowrap;
-  overflow:hidden;
-  width:0;
-  animation: typing 2.5s steps(30,end) forwards, blink .6s infinite;
+  margin-bottom:6px;
+}
+.header p{
+  color:var(--muted);
+  font-size:14px;
 }
 
-/* SUBTEXT */
-.sub{
-  margin-top:12px;
-  font-size:16px;
-  opacity:0;
-  animation:fadeIn 1s ease forwards;
-  animation-delay:2.5s;
-}
-
-/* LOADER */
-.loader{
+/* ===== FORM ===== */
+label{
+  display:block;
   margin-top:15px;
+  font-weight:500;
 }
 
-.loader span{
-  display:inline-block;
-  width:8px;
-  height:8px;
-  background:white;
-  border-radius:50%;
-  margin:0 3px;
-  animation:bounce .6s infinite alternate;
+input{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin-top:8px;
+  transition:.2s;
 }
 
-.loader span:nth-child(2){animation-delay:.2s;}
-.loader span:nth-child(3){animation-delay:.4s;}
-
-/* ANIMATION */
-@keyframes typing{to{width:100%}}
-@keyframes blink{50%{border-color:transparent}}
-@keyframes fadeIn{to{opacity:1}}
-@keyframes bounce{to{transform:translateY(-8px);opacity:.6}}
-
-/* 📱 MOBILE */
-@media (max-width: 768px){
-
-  .typing{
-    font-size:22px;
-    letter-spacing:1px;
-  }
-
-  .sub{
-    font-size:13px;
-  }
-
-  .loader span{
-    width:6px;
-    height:6px;
-  }
+input:focus{
+  border-color:var(--primary);
+  outline:none;
+  box-shadow:0 0 0 3px rgba(74,144,226,.15);
 }
 
-/* 📱 EXTRA SMALL (HP kecil) */
-@media (max-width: 400px){
-
-  .typing{
-    font-size:18px;
-  }
-
-  .sub{
-    font-size:12px;
-  }
+input[type="radio"]{
+  width:auto;
+  margin-right:6px;
 }
-</style>
+
+/* ===== BUTTON ===== */
+button{
+  width:100%;
+  margin-top:15px;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background: linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:white;
+  font-weight:500;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform: translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== LINK ===== */
+a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:500;
+}
+a:hover{ text-decoration:underline; }
+
+/* ===== RESULT ===== */
+#hasil{
+  margin-top:25px;
+  padding:20px;
+  border-radius:12px;
+  background:var(--soft);
+  animation: fadeIn .5s ease;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  margin-top:20px;
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
